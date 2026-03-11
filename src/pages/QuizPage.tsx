@@ -63,6 +63,7 @@ const getQuestionsForSubject = (subject: string, chapter: string, difficulty: st
       }
       
       // Handle Math and Physics via their data objects
+      const { grade10EconomicsQuestions } = await import('@/data/grade10EconomicsQuestions');
       const grade10DataMap: Record<string, Record<string, any[]>> = {
         'mathematics': grade10MathematicsQuestions,
         'physics': grade10PhysicsQuestions,
@@ -70,6 +71,7 @@ const getQuestionsForSubject = (subject: string, chapter: string, difficulty: st
         'english': grade10EnglishQuestions,
         'civic education': grade10CivicsQuestions,
         'civics': grade10CivicsQuestions,
+        'economics': grade10EconomicsQuestions,
       };
       
       const subjectQuestions = grade10DataMap[subjectLower];
