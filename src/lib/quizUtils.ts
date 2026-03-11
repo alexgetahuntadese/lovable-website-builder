@@ -55,6 +55,9 @@ const normalizeQuestion = (q: any): NormalizedQuestion => ({
 });
 
 const questionSets: Record<string, Record<string, any>> = {
+  "9": {
+    "Mathematics": grade9MathematicsQuestions,
+  },
   "10": {
     "Mathematics": grade10MathematicsQuestions,
     "Physics": grade10PhysicsQuestions,
